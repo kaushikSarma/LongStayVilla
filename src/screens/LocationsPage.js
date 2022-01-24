@@ -1,5 +1,6 @@
 import React from 'react';
 import { SafeAreaView, View, FlatList, TextInput } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 import { useOritationChange } from './ScreenUtils';
 import { LS_LIGHT_GREY } from '../resources/ColorConstants';
 import villaList from '../resources/dummyData/villaList';
@@ -17,6 +18,7 @@ export default LocationsPage = () => {
 	return (
 		<SafeAreaView style={{height: dimension.height - 50, paddingHorizontal: 8, paddingVertical: 8 }}>
 			<View style={LocationsPageStyles.appBarStyle}>
+				<Icon name='search-outline' size={20} />
 				<TextInput 
 					placeholder='Aspen'
 					style={LocationsPageStyles.searchInputStyle}

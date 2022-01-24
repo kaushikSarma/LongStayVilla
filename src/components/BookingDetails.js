@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
 import { CURRENCY_USD } from '../resources/CommonConstants';
-import Icon from 'react-native-vector-icons/Ionicons';
 import { LocationText } from './CustomText';
 
 export default BookingDetails = ({
